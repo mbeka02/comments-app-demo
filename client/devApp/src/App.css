@@ -348,3 +348,20 @@ body {
   font-weight: 500;
   color: hsl(238, 40%, 52%);
 }
+
+/*nav*/
+.nav {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+
+  justify-content: right;
+}
+.nav--btn {
+  margin: 1rem;
+  border: none;
+  color: hsl(238, 40%, 52%);
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+}

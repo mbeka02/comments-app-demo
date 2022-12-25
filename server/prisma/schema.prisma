@@ -20,8 +20,14 @@ model Post {
 model User {
   id String @id @default(uuid())
   user String
+ 
   comments Comment[]
   likes Like[]
+}
+model Picture{
+  id Int @id @default(autoincrement())
+   file String
+  file_name String
 }
 
 model Comment {

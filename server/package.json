@@ -23,6 +23,7 @@
     "@fastify/sensible": "^5.1.1",
     "@prisma/client": "^4.4.0",
     "dotenv": "^16.0.3",
-    "fastify": "^4.8.1"
+    "fastify": "^4.8.1",
+    "fastify-multer": "^2.0.3"
   }
 }

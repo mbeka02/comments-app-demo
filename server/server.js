@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import sensible from "@fastify/sensible";
 import cors from "@fastify/cors";
 import cookie from "@fastify/cookie";
+import multer from "fastify-multer";
 import { PrismaClient } from "@prisma/client";
 dotenv.config();
 
@@ -13,6 +14,7 @@ app.register(cors, {
   origin: process.env.CLIENT_URL,
   credentials: true,
 });
+app.register(multer.contentParser);
 app.addHook("onRequest", (req, res, done) => {
   if (req.cookies.userId !== CURRENT_USER_ID) {
     req.cookies.userId = CURRENT_USER_ID;

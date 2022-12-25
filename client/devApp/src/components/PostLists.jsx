@@ -2,6 +2,7 @@ import { fetchPosts } from "../services/posts";
 import { Link } from "react-router-dom";
 import { useAsync } from "../hooks/useAsync";
 import Loader from "./Loader";
+import Navbar from "./Navbar";
 export default function Postlists() {
   /*const [posts, setPosts] = useState([]);
   useEffect(() => {
